@@ -3,4 +3,4 @@
 ### Collections of snippets, thoughts, and junk. 
 
 
-[[Python/slack-api.md]]
+[Python Slack Example](Python/slack-api.md)
