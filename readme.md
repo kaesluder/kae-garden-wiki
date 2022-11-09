@@ -2,4 +2,4 @@
 
 ### Collections of snippets, thoughts, and junk. 
 
-[[python/slack-api]]
+[[Python/slack-api]]
