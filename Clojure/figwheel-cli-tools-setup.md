@@ -54,6 +54,13 @@ Defines the `main` function for a build.
 
 ```
 
+#### Local Help
+
+```shell
+clj -M:fig -h
+```
+
+
 Auto testing URL: http://localhost:9500/figwheel-extra-main/auto-testing
 
 
