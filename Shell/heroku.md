@@ -1,6 +1,8 @@
 # Workflow for creating heroku app
 
 
+`hobby-dev` might be outdated with recent service changes. 
+
 ```shell
 source venv/bin/activate
 pip install gunicorn
