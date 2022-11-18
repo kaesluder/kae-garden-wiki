@@ -13,3 +13,8 @@ Collections of snippets, thoughts, and junk.
 ### Clojure
 
 * [Figwheel build with cli tools](Clojure/figwheel-cli-tools-setup.md)
+
+### Current Developments
+
+* [Personal Project](Software_Design_Notes/2022-11-18-markdown-and-resume-ontology.md)
+* Ada Career Week
