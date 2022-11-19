@@ -21,4 +21,6 @@ Collections of snippets, thoughts, and junk.
 * [Personal Project](Software_Design_Notes/2022-11-18-markdown-and-resume-ontology.md)
 * Ada Career Week
 
-2022-11-19 14:32:02
+---
+
+* 2022-11-19 14:32:02

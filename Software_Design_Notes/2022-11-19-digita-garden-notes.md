@@ -21,7 +21,7 @@ site_url: https://example.com/
 theme: readthedocs
 ```
 
-### Philosophical
+## Philosophical
 
 A lot of this is converging on Tom Critchlow's ideas regarding [gardens, streams, and campfires](https://tomcritchlow.com/2018/10/10/of-gardens-and-wikis/). Some of the 
 problems with the design of social media include:
