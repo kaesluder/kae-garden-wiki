@@ -14,7 +14,10 @@ Collections of snippets, thoughts, and junk.
 
 * [Figwheel build with cli tools](Clojure/figwheel-cli-tools-setup.md)
 
-### Current Developments
+### News and Current Developments
 
+* A reflection essay on [digital gardening](Software_Design_Notes/2022-11-19-digita-garden-notes.md) that explains some of the ideas behind this space. 
 * [Personal Project](Software_Design_Notes/2022-11-18-markdown-and-resume-ontology.md)
 * Ada Career Week
+
+2022-11-19 14:32:02
