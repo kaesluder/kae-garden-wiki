@@ -1,6 +1,6 @@
 # SQL Alchemy One-to-Many
 
-Written for: [[https://github.com/kaesluder/task-list-api]]
+Written for: [Ada task list project](https://github.com/kaesluder/task-list-api)
 
 One-to-many relationship.
 

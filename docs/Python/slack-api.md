@@ -1,8 +1,9 @@
-# Python/Slack-Api
+# Python/Slack-API
 
 ### Slack API Example
 
-Written for: [[https://github.com/kaesluder/task-list-api]]
+Written for: [Ada task list project](https://github.com/kaesluder/task-list-api)
+
 
 
 
