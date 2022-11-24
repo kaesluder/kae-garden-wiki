@@ -17,7 +17,7 @@ Collections of snippets, thoughts, and junk.
 
 ### News and Current Developments
 
-* A reflection essay on [digital gardening](Software_Design_Notes/2022-11-19-digita-garden-notes.md) that explains some of the ideas behind this space. 
+* Some thoughts on implementing a [digital garden](http://localhost:8000/Digital_Garden_Thoughts/dg1-digita-garden-notes/) that explains some of the ideas behind this space. 
 * [Personal Project](Software_Design_Notes/2022-11-18-markdown-and-resume-ontology.md)
 * Ada Career Week
 
