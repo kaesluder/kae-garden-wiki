@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Digital Garden Design and Implementation Notes - Kae's Digital Garden & Programming Notebook</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Digital Garden Design and Implementation Notes", url: "#_top", children: [
+              {title: "The Technical", url: "#the-technical" },
+              {title: "Philosophical", url: "#philosophical" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href="../2022-11-18-markdown-and-resume-ontology/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../2022-11-18-markdown-and-resume-ontology/" class="btn btn-xs btn-link">
+        Markdown to Resume? Confusion
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="digital-garden-design-and-implementation-notes">Digital Garden Design and Implementation Notes</h1>
+<h2 id="the-technical">The Technical</h2>
+<p>Spent a day evaluating ways to share my garden beyond giving people a link to
+the github repo (which is still on the table BTW). There's a class of software
+that translates markdown-html while providing indexes, styling, and everything
+else we expect from a "modern" personal web site. After trying out
+<a href="https://getpelican.com/">Pelican</a>, <a href="https://getpelican.com/">hugo</a>,
+<a href="https://www.getzola.org/documentation/getting-started/overview/">zola</a>, and
+<a href="https://www.mkdocs.org/">mkDocs</a>, I ended up with mkDocs. Which makes my brain
+look like an open-source project, and I guess it is.</p>
+<p>The primary technical annoyance is that most of my note-taking and note-reading happens 
+in the editor. So preserving folder structure and ability to follow links in-editor 
+were both important. Pelican converts folder hierarchies into category tags. Both hugo and zola required additional work to get into deep trees. mkDocs respected folder hierarchy and gave me what I was about to create for myself with three lines of config:</p>
+<pre><code class="language-yaml">site_name: My Mental Rummage Sale
+site_url: https://example.com/
+theme: readthedocs
+</code></pre>
+<h2 id="philosophical">Philosophical</h2>
+<p>A lot of this is converging on Tom Critchlow's ideas regarding <a href="https://tomcritchlow.com/2018/10/10/of-gardens-and-wikis/">gardens, streams, and campfires</a>. Some of the 
+problems with the design of social media include:</p>
+<ul>
+<li>Unmoderated spaces tend to favor the loudest and most aggressive voices. This is
+an effect we've studied since the 90s. </li>
+<li>Conversely, "hot takes" get more views, which in turn get more boosts.</li>
+<li>Social pressure to perform on a daily or weekly basis. </li>
+<li>The relationship between ephemera and creative work gets inverted. We archive
+ephemeral ideas for decades while more reflective work gets buried and lost.</li>
+</ul>
+<p>I have a bit of bias here. I'm a recovering social media addict, so I need to be
+extremely careful about how and what I post online. The problem with "someone's
+wrong on the internet" rage is that someone is always wrong on the internet. And
+it's easy to get stuck fighting the same arguments online your friends and
+family have already agreed to disagree on. I had an anonymous blog (in hugo) for years 
+and eventually killed it because while some ideas were good, others made me 
+actively uncomfortable after life changed my perspective. </p>
+<p>At the same time, I recognize the value of getting work out there, even imperfect
+work. </p>
+<p>So anyway, trying out a digital garden where anything can be pruned. Most of it won't 
+be interesting, and the piles of dirt, wheelbarrows, and paving stones are conspicuously visible. People who want more day-to-day stream-like stuff can find me on any of the smaller communities I feel comfortable engaging in. </p>
+<hr />
+<ul>
+<li>first draft: 2022-11-19</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href="../2022-11-18-markdown-and-resume-ontology/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../2022-11-18-markdown-and-resume-ontology/" class="btn btn-xs btn-link">
+        Markdown to Resume? Confusion
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
