@@ -1,4 +1,9 @@
 site_name: Kae's Digital Garden & Programming Notebook
-theme: windmill
+# theme: material
+theme:
+  name: material
 repo_url: https://github.com/kaesluder/kae-garden-wiki
 edit_uri: ""
+plugins:
+  - search
+  - git-revision-date-localized
