@@ -1,4 +1,4 @@
-# Python/slack-Api
+# Python/Slack-Api
 
 ### Slack API Example
 
