@@ -8,5 +8,5 @@
 
 ### Other Tools
 
-http://www.futurile.net/2020/05/16/clojure-observability-and-debugging-tools/
+* [Clojure observability tools](http://www.futurile.net/2020/05/16/clojure-observability-and-debugging-tools/)
 

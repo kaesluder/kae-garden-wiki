@@ -2,6 +2,10 @@
 
 Collections of snippets, thoughts, and junk. If you're unfamiliar with the concept of a digital garden, [Organizing This Space](Digital_Garden_Thoughts/dg3_organizaing_this_space.md) might be helpful. 
 
+## Highlights
+
+Recent and recommended...
+
 ### Python
 
 * [Python Slack Example](Python/slack-api.md)
@@ -17,10 +21,7 @@ Collections of snippets, thoughts, and junk. If you're unfamiliar with the conce
 
 ### News and Current Developments
 
-* Some thoughts on implementing a [digital garden](/Digital_Garden_Thoughts/dg1-digita-garden-notes/) that explains some of the ideas behind this space. 
+* Some thoughts on implementing a [digital garden](Digital_Garden_Thoughts/dg1-digita-garden-notes.md) that explains some of the ideas behind this space. 
 * [Personal Project](Software_Design_Notes/2022-11-18-markdown-and-resume-ontology.md)
 * This week: exploring JavaScript. 
 
----
-
-* 2022-11-19 14:32:02
