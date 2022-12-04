@@ -13,7 +13,7 @@
     
     
       
-        <title>Digital Garden Design and Implementation Notes - Kae's Digital Garden & Programming Notebook</title>
+        <title>Using a comparator function for complex logic - Kae's Digital Garden & Programming Notebook</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#digital-garden-design-and-implementation-notes" class="md-skip">
+        <a href="#using-a-comparator-function-for-complex-logic" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Digital Garden Design and Implementation Notes
+              Using a comparator function for complex logic
             
           </span>
         </div>
@@ -294,14 +294,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -322,59 +320,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Digital Garden Design and Implementation Notes
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Digital_Garden_Thoughts/dg1-digita-garden-notes/" class="md-nav__link">
         Digital Garden Design and Implementation Notes
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#the-technical" class="md-nav__link">
-    The Technical
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#philosophical" class="md-nav__link">
-    Philosophical
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -386,7 +336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dg2_publishing%20to%20github/" class="md-nav__link">
+      <a href="../../Digital_Garden_Thoughts/dg2_publishing%20to%20github/" class="md-nav__link">
         Publishing to Github and Settling on MkDocs
       </a>
     </li>
@@ -400,7 +350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dg3_organizaing_this_space/" class="md-nav__link">
+      <a href="../../Digital_Garden_Thoughts/dg3_organizaing_this_space/" class="md-nav__link">
         Organizing this Space
       </a>
     </li>
@@ -420,12 +370,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -446,11 +398,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Javascript/comparator_functions/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Using a comparator function for complex logic
       </a>
+      
     </li>
   
 
@@ -654,28 +616,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#the-technical" class="md-nav__link">
-    The Technical
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#philosophical" class="md-nav__link">
-    Philosophical
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -689,56 +629,61 @@
                   
 
 
-<h1 id="digital-garden-design-and-implementation-notes">Digital Garden Design and Implementation Notes</h1>
-<h2 id="the-technical">The Technical</h2>
-<p>Spent a day evaluating ways to share my garden beyond giving people a link to
-the github repo (which is still on the table BTW). There's a class of software
-that translates markdown-html while providing indexes, styling, and everything
-else we expect from a "modern" personal web site. After trying out
-<a href="https://getpelican.com/">Pelican</a>, <a href="https://getpelican.com/">hugo</a>,
-<a href="https://www.getzola.org/documentation/getting-started/overview/">zola</a>, and
-<a href="https://www.mkdocs.org/">mkDocs</a>, I ended up with mkDocs. Which makes my brain
-look like an open-source project, and I guess it is.</p>
-<p>The primary technical annoyance is that most of my note-taking and note-reading happens 
-in the editor. So preserving folder structure and ability to follow links in-editor 
-were both important. Pelican converts folder hierarchies into category tags. Both hugo and zola required additional work to get into deep trees. mkDocs respected folder hierarchy and gave me what I was about to create for myself with three lines of config:</p>
-<pre><code class="language-yaml">site_name: My Mental Rummage Sale
-site_url: https://example.com/
-theme: readthedocs
+<h1 id="using-a-comparator-function-for-complex-logic">Using a comparator function for complex logic</h1>
+<p>Written for the <a href="https://github.com/kaesluder/js-adagrams">Ada js-adagrams project.</a>. </p>
+<p>The assignment involves writing functions for a Scrabble-like game. The game has four tiebreaker conditions:</p>
+<ol>
+<li>The word with the highest score wins.</li>
+<li>If two words are tied, pick a word that uses 10 characters.</li>
+<li>If neither word has 10 characters, pick a word that's the shortest.</li>
+<li>If all tiebreakers fail, pick the first submitted. </li>
+</ol>
+<p>Comparator functions/expressions in Javascript return negative, zero, or
+positive to determine the order of two values in a list. We chain multiple
+comparator expressions using or to create multi-category sorts. </p>
+<p>Not the most efficient way, will probably refactor later using a <code>max</code> algorithm
+rather than a <code>sort</code> algorithm. </p>
+<pre><code class="language-Javascript">const tenLetterTieBreaker = (a, b) =&gt; {
+  /* the comparator function for sort needs to 
+  return negative, positive, or zero. Assign 
+  a fake score to a and b, if either or both are 
+  10 characters in length. 
+
+  Returns zero if:
+  1. Both words are &lt; 10 characters.
+  2. Both words are 10 characters. */
+  const aScore = a.length == 10 ? 100 : 0;
+  const bScore = b.length == 10 ? 100 : 0;
+
+  // bump the higher value to the front of
+  // the list.
+  return bScore - aScore;
+};
+
+export const highestScoreFrom = (words) =&gt; {
+  const sortedWords = words.sort((a, b) =&gt; {
+    return (
+      // try to sort by score first.
+      scoreWord(b) - scoreWord(a) ||
+      // if scores are equal check the tenLetterTieBreaker.
+      tenLetterTieBreaker(a, b) ||
+      // if there's no 10 letter tiebreaker, favor the shortest.
+      a.length - b.length
+      // and if everything is equal, sort should be stable
+      // (I'm grateful for that.)
+    );
+  });
+  return { word: sortedWords[0], score: scoreWord(sortedWords[0]) };
+};
+
 </code></pre>
-<h2 id="philosophical">Philosophical</h2>
-<p>A lot of this is converging on Tom Critchlow's ideas regarding <a href="https://tomcritchlow.com/2018/10/10/of-gardens-and-wikis/">gardens, streams, and campfires</a>. Some of the 
-problems with the design of social media include:</p>
-<ul>
-<li>Unmoderated spaces tend to favor the loudest and most aggressive voices. This is
-an effect we've studied since the 90s. </li>
-<li>Conversely, "hot takes" get more views, which in turn get more boosts.</li>
-<li>Social pressure to perform on a daily or weekly basis. </li>
-<li>The relationship between ephemera and creative work gets inverted. We archive
-ephemeral ideas for decades while more reflective work gets buried and lost.</li>
-</ul>
-<p>I have a bit of bias here. I'm a recovering social media addict, so I need to be
-extremely careful about how and what I post online. The problem with "someone's
-wrong on the internet" rage is that someone is always wrong on the internet. And
-it's easy to get stuck fighting the same arguments online your friends and
-family have already agreed to disagree on. I had an anonymous blog (in hugo) for years 
-and eventually killed it because while some ideas were good, others made me 
-actively uncomfortable after life changed my perspective. </p>
-<p>At the same time, I recognize the value of getting work out there, even imperfect
-work. </p>
-<p>So anyway, trying out a digital garden where anything can be pruned. Most of it won't 
-be interesting, and the piles of dirt, wheelbarrows, and paving stones are conspicuously visible. People who want more day-to-day stream-like stuff can find me on any of the smaller communities I feel comfortable engaging in. </p>
-<hr />
-<ul>
-<li>first draft: 2022-11-19</li>
-</ul>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 24, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 4, 2022</span>
       
     
   </small>
@@ -763,7 +708,7 @@ be interesting, and the piles of dirt, wheelbarrows, and paving stones are consp
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../../Clojure/map-reduce-notes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Clojure map and reduce notes" rel="prev">
+        <a href="../../Digital_Garden_Thoughts/dg3_organizaing_this_space/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Organizing this Space" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -772,20 +717,20 @@ be interesting, and the piles of dirt, wheelbarrows, and paving stones are consp
               <span class="md-footer__direction">
                 Previous
               </span>
-              Clojure map and reduce notes
+              Organizing this Space
             </div>
           </div>
         </a>
       
       
         
-        <a href="../dg2_publishing%20to%20github/" class="md-footer__link md-footer__link--next" aria-label="Next: Publishing to Github and Settling on MkDocs" rel="next">
+        <a href="../../Python/advent_of_code_2022/" class="md-footer__link md-footer__link--next" aria-label="Next: Advent of Code 2022" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Publishing to Github and Settling on MkDocs
+              Advent of Code 2022
             </div>
           </div>
           <div class="md-footer__button md-icon">
