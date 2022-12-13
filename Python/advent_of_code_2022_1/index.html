@@ -13,7 +13,7 @@
     
     
       
-        <title>Workflow for creating heroku app - Kae's Digital Garden & Programming Notebook</title>
+        <title>Advent of Code 2022, Days 1-5 - Kae's Digital Garden & Programming Notebook</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#workflow-for-creating-heroku-app" class="md-skip">
+        <a href="#advent-of-code-2022-days-1-5" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Workflow for creating heroku app
+              Advent of Code 2022, Days 1-5
             
           </span>
         </div>
@@ -542,12 +542,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
       
       
       
@@ -568,11 +570,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Python/advent_of_code_2022_1/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Advent of Code 2022, Days 1-5
       </a>
+      
     </li>
   
 
@@ -584,7 +596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Python/slack-api/" class="md-nav__link">
+      <a href="../slack-api/" class="md-nav__link">
         Python/Slack-API
       </a>
     </li>
@@ -598,7 +610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Python/sqlalchemy-one-to-many/" class="md-nav__link">
+      <a href="../sqlalchemy-one-to-many/" class="md-nav__link">
         SQL Alchemy One-to-Many
       </a>
     </li>
@@ -618,14 +630,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
       
       
@@ -646,21 +656,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Shell/heroku/" class="md-nav__link">
         Workflow for creating heroku app
       </a>
-      
     </li>
   
 
@@ -753,27 +753,17 @@
                   
 
 
-<h1 id="workflow-for-creating-heroku-app">Workflow for creating heroku app</h1>
-<p><code>hobby-dev</code> might be outdated with recent service changes. </p>
-<pre><code class="language-shell">source venv/bin/activate
-pip install gunicorn
-pip freeze &gt; requirements.txt
-touch Procfile
-heroku login
-heroku create kaes-task-list-api
-git remote -v
-git status
-git push heroku master:main
-heroku addons:create heroku-postgresql:hobby-dev
-heroku run flask db upgrade
-</code></pre>
+<h1 id="advent-of-code-2022-days-1-5">Advent of Code 2022, Days 1-5</h1>
+<p>Using <a href="https://adventofcode.com/2022">Advent of Code 2022</a> for daily programming 
+exercises. My solutions are currently on a <a href="https://gist.github.com/kaesluder/83a91ac9e166d551575b38ca26559d23">gist</a>. It probably won't be updated on a daily basis, and I'm not committing to doing all of the problems in a timely manner. </p>
+<script src="https://gist.github.com/kaesluder/83a91ac9e166d551575b38ca26559d23.js"></script>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 24, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 13, 2022</span>
       
     
   </small>
@@ -798,7 +788,7 @@ heroku run flask db upgrade
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../../Python/sqlalchemy-one-to-many/" class="md-footer__link md-footer__link--prev" aria-label="Previous: SQL Alchemy One-to-Many" rel="prev">
+        <a href="../../Overthinking_Media/supergiant_nona_lee/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Supergiant Games, Yoon Ha Lee, and Nona the Ninth" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -807,20 +797,20 @@ heroku run flask db upgrade
               <span class="md-footer__direction">
                 Previous
               </span>
-              SQL Alchemy One-to-Many
+              Supergiant Games, Yoon Ha Lee, and Nona the Ninth
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../Software_Design_Notes/2022-11-18-markdown-and-resume-ontology/" class="md-footer__link md-footer__link--next" aria-label="Next: Markdown to Resume? Confusion" rel="next">
+        <a href="../slack-api/" class="md-footer__link md-footer__link--next" aria-label="Next: Python/Slack-API" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Markdown to Resume? Confusion
+              Python/Slack-API
             </div>
           </div>
           <div class="md-footer__button md-icon">
