@@ -15,7 +15,7 @@ Collections of snippets, thoughts, and junk. If you're unfamiliar with the conce
 
 ### Python
 
-* [Advent of Code 2022](Python/advent_of_code_2022.md)
+* [Advent of Code 2022](Python/advent_of_code_2022_1.md)
 * [Python Slack Example](Python/slack-api.md)
 * [SQLAlchemy One-to-Many](Python/sqlalchemy-one-to-many.md)
 
