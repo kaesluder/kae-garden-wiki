@@ -35,23 +35,32 @@ choose to display this metadata at the headline level or use it to filter views.
 ## MVP Feature Set
 
 1.  RSS fetching and viewing
-    - RSS is an XML standard for providing website, article, and post summaries. While many sites have moved away from RSS, it's still widely used. 
+    - RSS is an XML standard for providing website, article, and post summaries.
+      While many sites have moved away from RSS, it's still widely used. 
 2.  Keyword or regex tagging 
     - Simple search on feed content.
 3.  Natural Language Processing (NLP) tags
-    - The first prototype will use very basic NLP algorithms such as Sentiment Analysis, Naive Bayesian Analysis, and/or Logistic Regression to tag text. These filters can be trained via user curation, and offer reasonable accuracy without extensive machine learning.  
-4.  Desktop app
+    - The first prototype will use very basic NLP algorithms such as Sentiment
+      Analysis, Naive Bayesian Analysis, and/or Logistic Regression to tag text.
+      These filters can be trained via user curation, and offer reasonable
+      accuracy without extensive machine learning.  
+4.  Desktop app or desktop browser app
     - I think this will be challenging enough without trying to adapt to small-screen controls.   
-
+4.  Filter wizard
+    - Drama Llama can suggest filters based on common patterns. 
 ### Potential Additional Features
 
 1.  Machine Learning tagging using existing models
 2.  Cross-platform testing
-3.  Additional API integration
+3.  Additional API and RSS integration
 
 ## Draft Technology Choices
 
-- Front end: Electron or Browser using local storage
+- Front end: Electron or Browser using localStorage or indexedDB
+- [Natural](https://github.com/NaturalNode/natural) (JS) provides tools for
+  basic language processing including statistical classification algorithms
+- Multiple machine learning/AI models exist for this kind of thing, more
+  research is needed
 - SQLite or other embedded data-storage solution
 - JavaScript or Typescript depending on level of support
 - React + css framework. 
