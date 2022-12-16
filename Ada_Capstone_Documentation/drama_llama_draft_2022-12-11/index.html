@@ -913,7 +913,8 @@ choose to display this metadata at the headline level or use it to filter views.
 <h2 id="mvp-feature-set">MVP Feature Set</h2>
 <ol>
 <li>RSS fetching and viewing<ul>
-<li>RSS is an XML standard for providing website, article, and post summaries. While many sites have moved away from RSS, it's still widely used. </li>
+<li>RSS is an XML standard for providing website, article, and post summaries.
+  While many sites have moved away from RSS, it's still widely used. </li>
 </ul>
 </li>
 <li>Keyword or regex tagging <ul>
@@ -921,11 +922,18 @@ choose to display this metadata at the headline level or use it to filter views.
 </ul>
 </li>
 <li>Natural Language Processing (NLP) tags<ul>
-<li>The first prototype will use very basic NLP algorithms such as Sentiment Analysis, Naive Bayesian Analysis, and/or Logistic Regression to tag text. These filters can be trained via user curation, and offer reasonable accuracy without extensive machine learning.  </li>
+<li>The first prototype will use very basic NLP algorithms such as Sentiment
+  Analysis, Naive Bayesian Analysis, and/or Logistic Regression to tag text.
+  These filters can be trained via user curation, and offer reasonable
+  accuracy without extensive machine learning.  </li>
 </ul>
 </li>
-<li>Desktop app<ul>
+<li>Desktop app or desktop browser app<ul>
 <li>I think this will be challenging enough without trying to adapt to small-screen controls.   </li>
+</ul>
+</li>
+<li>Filter wizard<ul>
+<li>Drama Llama can suggest filters based on common patterns. </li>
 </ul>
 </li>
 </ol>
@@ -933,11 +941,15 @@ choose to display this metadata at the headline level or use it to filter views.
 <ol>
 <li>Machine Learning tagging using existing models</li>
 <li>Cross-platform testing</li>
-<li>Additional API integration</li>
+<li>Additional API and RSS integration</li>
 </ol>
 <h2 id="draft-technology-choices">Draft Technology Choices</h2>
 <ul>
-<li>Front end: Electron or Browser using local storage</li>
+<li>Front end: Electron or Browser using localStorage or indexedDB</li>
+<li><a href="https://github.com/NaturalNode/natural">Natural</a> (JS) provides tools for
+  basic language processing including statistical classification algorithms</li>
+<li>Multiple machine learning/AI models exist for this kind of thing, more
+  research is needed</li>
 <li>SQLite or other embedded data-storage solution</li>
 <li>JavaScript or Typescript depending on level of support</li>
 <li>React + css framework. </li>
@@ -950,7 +962,7 @@ choose to display this metadata at the headline level or use it to filter views.
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 11, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 16, 2022</span>
       
     
   </small>
