@@ -13,7 +13,7 @@
     
     
       
-        <title>SQL Alchemy One-to-Many - Kae's Digital Garden & Programming Notebook</title>
+        <title>JavaScript helpers for modifying lists - Kae's Digital Garden & Programming Notebook</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sql-alchemy-one-to-many" class="md-skip">
+        <a href="#javascript-helpers-for-modifying-lists" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SQL Alchemy One-to-Many
+              JavaScript helpers for modifying lists
             
           </span>
         </div>
@@ -432,12 +432,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -460,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Javascript/comparator_functions/" class="md-nav__link">
+      <a href="../comparator_functions/" class="md-nav__link">
         Using a comparator function for complex logic
       </a>
     </li>
@@ -472,11 +474,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Javascript/map_mutate/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         JavaScript helpers for modifying lists
       </a>
+      
     </li>
   
 
@@ -488,7 +500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Javascript/yarn_commands/" class="md-nav__link">
+      <a href="../yarn_commands/" class="md-nav__link">
         Yarn Commands
       </a>
     </li>
@@ -556,14 +568,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
       
       
@@ -586,7 +596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advent_of_code_2022_1/" class="md-nav__link">
+      <a href="../../Python/advent_of_code_2022_1/" class="md-nav__link">
         Advent of Code 2022, Days 1-5
       </a>
     </li>
@@ -600,7 +610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slack-api/" class="md-nav__link">
+      <a href="../../Python/slack-api/" class="md-nav__link">
         Python/Slack-API
       </a>
     </li>
@@ -612,59 +622,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          SQL Alchemy One-to-Many
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Python/sqlalchemy-one-to-many/" class="md-nav__link">
         SQL Alchemy One-to-Many
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#parent" class="md-nav__link">
-    Parent
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#child" class="md-nav__link">
-    Child
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -792,28 +754,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#parent" class="md-nav__link">
-    Parent
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#child" class="md-nav__link">
-    Child
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -827,29 +767,24 @@
                   
 
 
-<h1 id="sql-alchemy-one-to-many">SQL Alchemy One-to-Many</h1>
-<p>Written for: <a href="https://github.com/kaesluder/task-list-api">Ada task list project</a></p>
-<p>One-to-many relationship.</p>
-<h3 id="parent">Parent</h3>
-<pre><code class="language-python">class Goal(db.Model):
-    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    title = db.Column(db.String, nullable=False)
+<h1 id="javascript-helpers-for-modifying-lists">JavaScript helpers for modifying lists</h1>
+<p>JavaScript helpers for modifying lists for use with React. Both 
+return a new list for triggering setState functions. </p>
+<pre><code class="language-JavaScript">// Deletes items from task list matching id.
+const deleteTaskById = function (taskList, id) {
+  return taskList.filter((task) =&gt; task.id !== id);
+};
 
-    # one to many
-
-    tasks = db.relationship(&quot;Task&quot;, back_populates=&quot;goal&quot;)
-</code></pre>
-<h3 id="child">Child</h3>
-<pre><code class="language-python">class Task(db.Model):
-    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    title = db.Column(db.String, nullable=False)
-    description = db.Column(db.String)
-    completed_at = db.Column(db.DateTime)
-
-    # many to one
-    goal_id = db.Column(db.Integer, db.ForeignKey(&quot;goal.id&quot;))
-    goal = db.relationship(&quot;Goal&quot;, back_populates=&quot;tasks&quot;)
-
+// Changes list elements matching predicateFunc using mutatorFunc
+const mapMutate = function (li, predicateFunc, mutatorFunc) {
+  return li.map((element) =&gt; {
+    if (predicateFunc(element)) {
+      return mutatorFunc(element);
+    } else {
+      return element;
+    }
+  });
+};
 </code></pre>
 
   <hr>
@@ -857,7 +792,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 24, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 19, 2022</span>
       
     
   </small>
@@ -882,7 +817,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../slack-api/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Python/Slack-API" rel="prev">
+        <a href="../comparator_functions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Using a comparator function for complex logic" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -891,20 +826,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Python/Slack-API
+              Using a comparator function for complex logic
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../Shell/heroku/" class="md-footer__link md-footer__link--next" aria-label="Next: Workflow for creating heroku app" rel="next">
+        <a href="../yarn_commands/" class="md-footer__link md-footer__link--next" aria-label="Next: Yarn Commands" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Workflow for creating heroku app
+              Yarn Commands
             </div>
           </div>
           <div class="md-footer__button md-icon">
