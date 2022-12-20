@@ -10,7 +10,7 @@ const deleteTaskById = function (taskList, id) {
 };
 
 // Changes list elements matching predicateFunc using mutatorFunc
-const mapMutate = function (li, predicateFunc, mutatorFunc) {
+const mapWhen = function (li, predicateFunc, mutatorFunc) {
   return li.map((element) => {
     if (predicateFunc(element)) {
       return mutatorFunc(element);
