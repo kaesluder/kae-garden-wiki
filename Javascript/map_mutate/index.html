@@ -776,7 +776,7 @@ const deleteTaskById = function (taskList, id) {
 };
 
 // Changes list elements matching predicateFunc using mutatorFunc
-const mapMutate = function (li, predicateFunc, mutatorFunc) {
+const mapWhen = function (li, predicateFunc, mutatorFunc) {
   return li.map((element) =&gt; {
     if (predicateFunc(element)) {
       return mutatorFunc(element);
@@ -792,7 +792,7 @@ const mapMutate = function (li, predicateFunc, mutatorFunc) {
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 19, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 20, 2022</span>
       
     
   </small>
