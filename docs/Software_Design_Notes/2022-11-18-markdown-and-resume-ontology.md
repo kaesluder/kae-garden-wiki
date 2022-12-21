@@ -1,5 +1,9 @@
 # Markdown to Resume? Confusion
 
+## 21 December 2022
+
+I found a workable solution using the [John Bookma `pandoc` templates.](https://github.com/john-bokma/resume-pandoc)
+
 ## 18 November 2022
 
 Something I'm spinning my wheels on is the idea of creating a web-based resume. 

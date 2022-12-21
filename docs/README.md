@@ -4,9 +4,9 @@ Collections of snippets, thoughts, and junk. If you're unfamiliar with the conce
 
 ## News and Current Developments
 
+* JavaScript `mapWhen` [function](Javascript/map_mutate.md). 
 * Continuing on my JavaScript journey, since I'm at least 10 years out of date. 
 * [Thoughts on dark(er) themes in fiction](Overthinking_Media/supergiant_nona_lee.md)
-* [Advent of Code 2022](Python/advent_of_code_2022_1.md)
 * Some thoughts on implementing a [digital garden](Digital_Garden_Thoughts/dg1-digita-garden-notes.md) that explains some of the ideas behind this space. 
 
 
