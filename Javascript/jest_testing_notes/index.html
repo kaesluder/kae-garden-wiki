@@ -902,6 +902,13 @@ expect(screen.getByText('Hello, World!')).toBeInTheDocument();
 // regex
 expect(screen.getByText(/Eastern/)).toBeInTheDocument();
 
+// check that function returns undefined
+expect(result1).toBeUndefined();
+
+// check object-structure match
+expect(result1[0]).toMatchObject(newWidget);
+
+
 </code></pre>
 <h2 id="links">Links</h2>
 <ul>
@@ -913,7 +920,7 @@ expect(screen.getByText(/Eastern/)).toBeInTheDocument();
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 26, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 3, 2023</span>
       
     
   </small>
