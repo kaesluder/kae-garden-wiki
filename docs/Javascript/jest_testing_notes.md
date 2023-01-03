@@ -37,6 +37,13 @@ expect(screen.getByText('Hello, World!')).toBeInTheDocument();
 // regex
 expect(screen.getByText(/Eastern/)).toBeInTheDocument();
 
+// check that function returns undefined
+expect(result1).toBeUndefined();
+
+// check object-structure match
+expect(result1[0]).toMatchObject(newWidget);
+
+
 ```
 
 ## Links
