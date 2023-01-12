@@ -18,3 +18,7 @@
 [Material UI](https://mui.com/)
 : prefab controls for react including enhanced tables and tree-list controls.
 
+## Setting Up Electron Forge
+
+1. [Use Electron Forge to set up a new project using the webpack template.](https://www.electronforge.io/templates/webpack-template)
+2. [Follow React integration instructions.](https://www.electronforge.io/guides/framework-integration/react)
