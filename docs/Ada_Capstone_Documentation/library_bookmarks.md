@@ -22,3 +22,15 @@
 
 1. [Use Electron Forge to set up a new project using the webpack template.](https://www.electronforge.io/templates/webpack-template)
 2. [Follow React integration instructions.](https://www.electronforge.io/guides/framework-integration/react)
+
+## Prior Research
+
+[A Large Labeled Corpus for Online Harassment Research](https://dl.acm.org/doi/epdf/10.1145/3091478.3091509)
+: Corpus not available, but used hashtags and twitter to build a corpus of harassing vs. nonharassing messages. 
+
+[Directions in hate speech data collection](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0243300#sec037)
+: Discusses issues with data collection. 
+
+[hatespeechdata.com](https://hatespeechdata.com/) : Links to hatespeech data collections available on github. 
+
+
