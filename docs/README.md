@@ -6,7 +6,6 @@ Collections of snippets, thoughts, and junk. If you're unfamiliar with the conce
 
 * [Quotes](Overthinking_Media/Quotes.md)
 * Ada Capstone project, [Drama Llama](Ada_Capstone_Documentation/drama_llama_draft_2022-12-11.md)
-* Ada Dev Academy interview week.
 * JavaScript [jest and react testing idioms](Javascript/jest_testing_notes.md)
 * [Thoughts on dark(er) themes in fiction](Overthinking_Media/supergiant_nona_lee.md)
 * Some thoughts on implementing a [digital garden](Digital_Garden_Thoughts/dg1-digita-garden-notes.md) that explains some of the ideas behind this space. 
