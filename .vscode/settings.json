@@ -1,3 +1,12 @@
 {
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "black",
+    "workbench.colorCustomizations": {
+        "tab.activeBorderTop": "#ff0000",
+        "[Monokai]": {
+            "tab.activeBorderTop": "#ff0000"
+        },
+        "activityBar.background": "#2D294A",
+        "titleBar.activeBackground": "#3E3A68",
+        "titleBar.activeForeground": "#FAFAFC"
+    }
 }
