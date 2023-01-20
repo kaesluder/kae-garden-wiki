@@ -5,8 +5,8 @@
         "[Monokai]": {
             "tab.activeBorderTop": "#ff0000"
         },
-        "activityBar.background": "#1B3403",
-        "titleBar.activeBackground": "#264904",
-        "titleBar.activeForeground": "#F3FEE8"
+        "activityBar.background": "#2D294A",
+        "titleBar.activeBackground": "#3E3A68",
+        "titleBar.activeForeground": "#FAFAFC"
     }
 }
