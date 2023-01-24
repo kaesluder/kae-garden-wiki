@@ -20,6 +20,8 @@
 
 [JavaScript bloom filter library](https://github.com/Callidon/bloom-filters) : Bloom filter implementations for JS.
 
+[RSS 2.0 spec from w3c](https://validator.w3.org/feed/docs/rss2.html)
+
 ## Setting Up Electron Forge
 
 1. [Use Electron Forge to set up a new project using the webpack template.](https://www.electronforge.io/templates/webpack-template)
