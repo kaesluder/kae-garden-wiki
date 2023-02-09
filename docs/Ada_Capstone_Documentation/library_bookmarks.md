@@ -1,5 +1,7 @@
 # Capstone library bookmarks
 
+## Modules
+
 [Luxon](https://moment.github.io/luxon/#/)
 : Time conversion and pretty-printing.
 
@@ -15,12 +17,17 @@
 [FeedParser](https://github.com/danmactough/node-feedparser)
 : RSS parsing library.
 
+[fast-xml-parser](https://github.com/NaturalIntelligence/fast-xml-parser)
+: RSS parsing library not dependent on promises.
+
 [Material UI](https://mui.com/)
 : prefab controls for react including enhanced tables and tree-list controls.
 
 [JavaScript bloom filter library](https://github.com/Callidon/bloom-filters) : Bloom filter implementations for JS.
 
 [RSS 2.0 spec from w3c](https://validator.w3.org/feed/docs/rss2.html)
+
+[Knex database library for JS](https://knexjs.org/guide/)
 
 ## Setting Up Electron Forge
 
