@@ -1,5 +1,7 @@
 # Drama Llama: Postmortem
 
+[Drama Llama main repo](https://github.com/kaesluder/drama-llama-py)
+
 ![Drama Llama screenshot](./Drama_Llama_Test1_MacOS.png)
 
 ## The Plan
