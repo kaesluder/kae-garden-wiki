@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../comparator_functions/">
       
       
-        <link rel="next" href="../drama_llama_draft_2022-12-11/">
+        <link rel="next" href="../jest_testing_notes/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.4">
     
     
       
-        <title>Drama Llama: Postmortem - Kae's Digital Garden & Programming Notebook</title>
+        <title>filesearcher - Kae's Digital Garden & Programming Notebook</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#drama-llama-postmortem" class="md-skip">
+        <a href="#filesearcher" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Drama Llama: Postmortem
+              filesearcher
             
           </span>
         </div>
@@ -223,20 +223,18 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
-        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="true">
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
           Ada Capstone Documentation
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -252,101 +250,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Drama Llama: Postmortem
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Ada_Capstone_Documentation/Drama_Llama_Postmortem/" class="md-nav__link">
         Drama Llama: Postmortem
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#the-plan" class="md-nav__link">
-    The Plan
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#constraints" class="md-nav__link">
-    Constraints
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dealing-with-api-churn" class="md-nav__link">
-    Dealing with API Churn
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#did-not-finish-natural-language-processing" class="md-nav__link">
-    Did Not Finish: Natural Language Processing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#success-hybrid-sqlite-model" class="md-nav__link">
-    Success: Hybrid SQLite Model
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#success-polymorphic-filters-and-filter-storage" class="md-nav__link">
-    Success: Polymorphic Filters and Filter Storage
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ill-take-it-building-a-desktop-app" class="md-nav__link">
-    I'll Take It: Building a Desktop App
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#final-thoughts" class="md-nav__link">
-    Final Thoughts
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -358,7 +266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../drama_llama_draft_2022-12-11/" class="md-nav__link">
+      <a href="../../Ada_Capstone_Documentation/drama_llama_draft_2022-12-11/" class="md-nav__link">
         Drama Llama (Working Title) - Kae Job Sluder
       </a>
     </li>
@@ -372,7 +280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../library_bookmarks/" class="md-nav__link">
+      <a href="../../Ada_Capstone_Documentation/library_bookmarks/" class="md-nav__link">
         Capstone library bookmarks
       </a>
     </li>
@@ -546,18 +454,20 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
-        <label class="md-nav__link" for="__nav_5" tabindex="0" aria-expanded="false">
+        <label class="md-nav__link" for="__nav_5" tabindex="0" aria-expanded="true">
           Javascript
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -575,7 +485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Javascript/comparator_functions/" class="md-nav__link">
+      <a href="../comparator_functions/" class="md-nav__link">
         Using a comparator function for complex logic
       </a>
     </li>
@@ -587,11 +497,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Javascript/filesearcher_js/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         filesearcher
       </a>
+      
     </li>
   
 
@@ -603,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Javascript/jest_testing_notes/" class="md-nav__link">
+      <a href="../jest_testing_notes/" class="md-nav__link">
         Jest testing notes
       </a>
     </li>
@@ -617,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Javascript/map_mutate/" class="md-nav__link">
+      <a href="../map_mutate/" class="md-nav__link">
         JavaScript helpers for modifying lists
       </a>
     </li>
@@ -631,7 +551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Javascript/yarn_commands/" class="md-nav__link">
+      <a href="../yarn_commands/" class="md-nav__link">
         Yarn Commands
       </a>
     </li>
@@ -966,70 +886,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#the-plan" class="md-nav__link">
-    The Plan
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#constraints" class="md-nav__link">
-    Constraints
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dealing-with-api-churn" class="md-nav__link">
-    Dealing with API Churn
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#did-not-finish-natural-language-processing" class="md-nav__link">
-    Did Not Finish: Natural Language Processing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#success-hybrid-sqlite-model" class="md-nav__link">
-    Success: Hybrid SQLite Model
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#success-polymorphic-filters-and-filter-storage" class="md-nav__link">
-    Success: Polymorphic Filters and Filter Storage
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ill-take-it-building-a-desktop-app" class="md-nav__link">
-    I'll Take It: Building a Desktop App
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#final-thoughts" class="md-nav__link">
-    Final Thoughts
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1044,45 +900,58 @@
 
 
 
-<h1 id="drama-llama-postmortem">Drama Llama: Postmortem</h1>
-<p><a href="https://github.com/kaesluder/drama-llama-py">Drama Llama main repo</a></p>
-<p><img alt="Drama Llama screenshot" src="../Drama_Llama_Test1_MacOS.png" /></p>
-<h2 id="the-plan">The Plan</h2>
-<p>The original goal coming into capstone was to apply Natural Language Processing to the consumption of social media and news feeds. Big technology companies do this routinely to push content to users and encourage doomscrolling. Given the recent changes and political controversies regarding content moderation, I feel it's quite clear that absent and insufficient content curation by big tech shifts the burden to individual users. This isn't a new problem, discussion of filters and killfiles go all the way back to Usenet and early email lists.</p>
-<p>The original plan involved developing an electron app using typescript to handle both backend and frontend logic. Since RSS feeds are notoriously variable, I was leaning to a NoSQL data store. A typescript/typescript framework can use electron inter-process-communication (IPC) for the data flow.</p>
-<p>Instead, I ended up doing another flask (python) backend with a javascript frontend. What happened?</p>
-<h2 id="constraints">Constraints</h2>
-<p>I had three weeks to bring a project from proposal to a working demo. In addition, we came home the first friday to find water pouring from ceiling vents due to a plumbing disaster from an upstairs neighbor.</p>
-<h2 id="dealing-with-api-churn">Dealing with API Churn</h2>
-<p>One problem I ran into repeatedly was having a set of components that tested well individually but refused to compile and run together. Multiple Nodejs NoSQL libraries depend on LevelDB, and I could not get M1 Mac binaries for those libraries. Typescript worked very well up to the point when library functions started delivering custom data types. Some frameworks wanted ESM imports, while others insisted on CommonJS.</p>
-<p>All of these problems could be fixed with more time and expertise, but I felt that debugging babel and webpack configs was not the best use of the limited learning time I had available.</p>
-<p><img alt="version churn in a nutshell" src="../7aod5r.jpg" /></p>
-<h2 id="did-not-finish-natural-language-processing">Did Not Finish: Natural Language Processing</h2>
-<p>This will be added to a future version. While python created opportunities to use stronger NLP libraries including NLTK and spaCy, developing the download/view features was necessary to make them useful. In the last few days, I adopted a soft freeze on new features to devote time to improving unit testing and documentation quality.</p>
-<h2 id="success-hybrid-sqlite-model">Success: Hybrid SQLite Model</h2>
-<p>Going into the project, I thought that I really needed a NoSQL solution. RSS is both not fully standardized and extendible, while my plans for filter design would involve polymorphism. Unfortunately, NoSQL was another area I couldn't figure out within the time constraints.</p>
-<p>Eventually, I discovered that SQLite includes SQL extensions for <a href="https://www.sqlite.org/json1.html">manipulating JSON field data</a>. So I adopted SQLite and used a hybrid model of relational fields for data needed for searching and sorting, and raw JSON data for everything else.</p>
-<h2 id="success-polymorphic-filters-and-filter-storage">Success: Polymorphic Filters and Filter Storage</h2>
-<p>I ended up implementing two different filter types. <code>BaseFilter</code> says "yes" to everything, while <code>RegexFilter</code> says "yes" to posts matching a regex pattern. Each filter is an object that knows how to apply its own criteria to a post, and to communicate what it is to the storage system. Storage is handled by exporting the config to a basic <code>dict()</code> and serializing it in an SQL table.</p>
-<h2 id="ill-take-it-building-a-desktop-app">I'll Take It: Building a Desktop App</h2>
-<p>I never got Electron working properly. My javascript skills were not up to writing the different dialects expected of Electron and Reactjs.</p>
-<p>Electron works by packaging Nodejs with a feature-limited version of Chrome. There are other frameworks implementing the model including <a href="https://tauri.app/">Tauri</a>. Eventually, I just went with <a href="https://pywebview.flowrl.com/">pywebview</a> which uses a python backend with a webkit front end. A python/webview or rust/webview might be easier on my brain than a nodejs/chromejs framework.</p>
-<p>Long-term I'm planning on continuing development for personal/hobby use, and I'm comfortable just running it as a microservice on my personal computer.</p>
-<h2 id="final-thoughts">Final Thoughts</h2>
-<p>It was a great, frustrating, and intense learning experience. Even though I was using a familiar stack, I had to innovate and push my knowledge on how to implement this project. Some takeaways:</p>
+<h1 id="filesearcher">filesearcher</h1>
+<p>I'm working on some learning projects, aka reimplementing stuff that could be done easier by piping a bunch of shell utilities together. A few lessons from DIY sewing:</p>
 <ol>
-<li>While I'm big on DIY, I don't feel comfortable doing interface design for others on my own.</li>
-<li>I'd like to put a lot more work into learning build and development tools instead of depending on boilerplate created by others.</li>
-<li>I'll probably continue this as a personal project, but it looks like my near future is going to be other languages and application areas.</li>
+<li>Give it permission to look weird.</li>
+<li>No, you're (probably) not going to reach the same level of speed and efficiency as a sweatshop with 300 years of technological automation.</li>
+<li>Knowing how it works is priceless.</li>
 </ol>
-<p>-- 18 February, 2022</p>
+<pre><code class="language-JavaScript">
+import util from 'node:util'
+import * as fsWalk from '@nodelib/fs.walk'
+
+const ignoreDirs = ['.git', /node_modules/]
+
+const ignore = function (entry, ignoreDirs) {
+  for (let d in ignoreDirs) {
+    if (entry.path.search(d) &gt; 0) {
+      return true
+    }
+  }
+  return false
+}
+
+const runGlob = function (searchStr, path) {
+  // todo ramda might make this easier
+  const searchThis = (entry) =&gt; ignore(entry, ignoreDirs)
+  const walk = util.promisify(fsWalk.walk)
+  const filterPredicate = (entry) =&gt; entry.path.search(searchStr) &gt; 0
+  return walk(path ?? '.', { deepFilter: searchThis }).then((response) =&gt;
+    response.filter(filterPredicate)
+  )
+}
+
+export { runGlob, ignore }
+</code></pre>
+<p>Lessons learned:</p>
+<ol>
+<li>A large number of my files are ephemera from the development process, so having a way to exclude <code>.git</code>, <code>venv</code>, and <code>node_modules</code> will dramatically cut down the time. (As much as 90%.)</li>
+<li>I spent way too much time trying to fit that for loop into a ramda expression.</li>
+<li>I'm having much better luck working with vite compared to webpack/babel.</li>
+</ol>
+<p>Things I need to learn:</p>
+<ol>
+<li>The concepts under other people's boilerplate.</li>
+<li>How to test async functionality in jest/vitest.</li>
+</ol>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 18, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 20, 2023</span>
       
     
   </small>
