@@ -911,28 +911,56 @@
 import util from 'node:util'
 import * as fsWalk from '@nodelib/fs.walk'
 
-const ignoreDirs = ['.git', /node_modules/]
+// https://www.npmjs.com/package/@nodelib/fs.walk
 
+const errorFilter = (error) =&gt; error.code === 'EACCES' || 'EPERM'
+
+const ignoreDirs = [/[.]git[/]/, /[/]node_modules[/]/]
+
+/**
+ * Filter predicate to determine if a directory should be
+ * ignored or not.
+ * @param {fsWalk.Entry} entry Entry to match against.
+ * @param {Regexp[]} ignoreDirs List of RegExps to match directories to ignore.
+ * @returns {Boolean}
+ */
 const ignore = function (entry, ignoreDirs) {
-  for (let d in ignoreDirs) {
-    if (entry.path.search(d) &gt; 0) {
+  for (let i in ignoreDirs) {
+    let dr = new RegExp(ignoreDirs[i])
+    if (dr.test(entry.path)) {
       return true
     }
   }
   return false
 }
 
-const runGlob = function (searchStr, path) {
+/**
+ * Run a search query and return a list of matching fsWalk entries.
+ * @param {String} searchStr Regexp or string to match against target path.
+ * @param {String} path Source path from which to start searching.
+ * @param {String[]} ignoreDirs List matching dirs to ignore.
+ * @returns
+ */
+const runGlob = function (searchStr, path, ignoreDirs) {
   // todo ramda might make this easier
-  const searchThis = (entry) =&gt; ignore(entry, ignoreDirs)
+  const searchThis = (entry) =&gt; {
+    if (ignore(entry, ignoreDirs)) {
+      return false
+    } else {
+      return true
+    }
+  }
+  const searchReg = new RegExp(searchStr)
+
+  // Transform a function that uses a callback into one that returns a promise.
   const walk = util.promisify(fsWalk.walk)
-  const filterPredicate = (entry) =&gt; entry.path.search(searchStr) &gt; 0
-  return walk(path ?? '.', { deepFilter: searchThis }).then((response) =&gt;
-    response.filter(filterPredicate)
+  return walk(path ?? '.', { deepFilter: searchThis, errorFilter: errorFilter }).then((response) =&gt;
+    response.filter((entry) =&gt; searchReg.test(entry.path))
   )
 }
 
 export { runGlob, ignore }
+
 </code></pre>
 <p>Lessons learned:</p>
 <ol>
@@ -945,13 +973,14 @@ export { runGlob, ignore }
 <li>The concepts under other people's boilerplate.</li>
 <li>How to test async functionality in jest/vitest.</li>
 </ol>
+<p>EDIT: Updated to fix some string-matching and logic errors.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 20, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 25, 2023</span>
       
     
   </small>
