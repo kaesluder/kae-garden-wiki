@@ -4,6 +4,9 @@ Collections of snippets, thoughts, and junk. If you're unfamiliar with the conce
 
 ## News and Current Developments
 
+Been busy onboarding at Amazon this month. Not much work I can share at this time.
+
+- [Pascal's Triangle in Java](Java/pascals_triangle.md)
 - [Drama Llama Capstone Postmortem](Ada_Capstone_Documentation/Drama_Llama_Postmortem.md)
 - [Quotes](Overthinking_Media/Quotes.md)
 - Ada Capstone project, [Drama Llama](Ada_Capstone_Documentation/drama_llama_draft_2022-12-11.md)
@@ -13,13 +16,11 @@ Collections of snippets, thoughts, and junk. If you're unfamiliar with the conce
 
 ## Recent and recommended...
 
+### Java
+
+- [Pascal's Triangle in Java](Java/pascals_triangle.md)
+
 ### Javascript
 
 - JavaScript `mapWhen` [function](Javascript/map_mutate.md).
 - [Complex comparator function](Javascript/comparator_functions.md)
-
-### Python
-
-- [Advent of Code 2022](Python/advent_of_code_2022_1.md)
-- [Python Slack Example](Python/slack-api.md)
-- [SQLAlchemy One-to-Many](Python/sqlalchemy-one-to-many.md)
