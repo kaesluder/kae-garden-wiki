@@ -4,7 +4,7 @@ Collections of snippets, thoughts, and junk. If you're unfamiliar with the conce
 
 ## News and Current Developments
 
-Been busy onboarding at Amazon this month. Not much work I can share at this time.
+I've been working hard with my internship with Amazon AuthX. Sorry for the sparse updates.
 
 - [Pascal's Triangle in Java](Java/pascals_triangle.md)
 - [Drama Llama Capstone Postmortem](Ada_Capstone_Documentation/Drama_Llama_Postmortem.md)
