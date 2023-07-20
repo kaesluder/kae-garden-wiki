@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../../Shell/heroku/">
       
       
-        <link rel="next" href="../drama_llama_draft_2022-12-11/">
+        <link rel="next" href="../2022-11-18-markdown-and-resume-ontology/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.4">
     
     
       
-        <title>Drama Llama: Postmortem - Kae's Digital Garden & Programming Notebook</title>
+        <title>Unit Testing Design Patterns - Kae's Digital Garden & Programming Notebook</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#drama-llama-postmortem" class="md-skip">
+        <a href="#unit-testing-design-patterns" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Drama Llama: Postmortem
+              Unit Testing Design Patterns
             
           </span>
         </div>
@@ -223,20 +223,18 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
-        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="true">
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
           Ada Capstone Documentation
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -252,101 +250,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Drama Llama: Postmortem
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Ada_Capstone_Documentation/Drama_Llama_Postmortem/" class="md-nav__link">
         Drama Llama: Postmortem
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#the-plan" class="md-nav__link">
-    The Plan
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#constraints" class="md-nav__link">
-    Constraints
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dealing-with-api-churn" class="md-nav__link">
-    Dealing with API Churn
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#did-not-finish-natural-language-processing" class="md-nav__link">
-    Did Not Finish: Natural Language Processing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#success-hybrid-sqlite-model" class="md-nav__link">
-    Success: Hybrid SQLite Model
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#success-polymorphic-filters-and-filter-storage" class="md-nav__link">
-    Success: Polymorphic Filters and Filter Storage
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ill-take-it-building-a-desktop-app" class="md-nav__link">
-    I'll Take It: Building a Desktop App
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#final-thoughts" class="md-nav__link">
-    Final Thoughts
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -358,7 +266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../drama_llama_draft_2022-12-11/" class="md-nav__link">
+      <a href="../../Ada_Capstone_Documentation/drama_llama_draft_2022-12-11/" class="md-nav__link">
         Drama Llama (Working Title) - Kae Job Sluder
       </a>
     </li>
@@ -372,7 +280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../library_bookmarks/" class="md-nav__link">
+      <a href="../../Ada_Capstone_Documentation/library_bookmarks/" class="md-nav__link">
         Capstone library bookmarks
       </a>
     </li>
@@ -938,18 +846,20 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_11" type="checkbox" id="__nav_11" checked>
       
       
       
-        <label class="md-nav__link" for="__nav_11" tabindex="0" aria-expanded="false">
+        <label class="md-nav__link" for="__nav_11" tabindex="0" aria-expanded="true">
           Software Design Notes
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -965,11 +875,66 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Software_Design_Notes/2022-07-19-unit-testing-design-patterns/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Unit Testing Design Patterns
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Unit Testing Design Patterns
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#functionargs-value" class="md-nav__link">
+    function(args) -&gt; value
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#log-and-move-on-exception-handling" class="md-nav__link">
+    Log and Move On Exception Handling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-interfaces" class="md-nav__link">
+    External Interfaces
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -981,7 +946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Software_Design_Notes/2022-11-18-markdown-and-resume-ontology/" class="md-nav__link">
+      <a href="../2022-11-18-markdown-and-resume-ontology/" class="md-nav__link">
         Markdown to Resume? Confusion
       </a>
     </li>
@@ -995,7 +960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Software_Design_Notes/2023-01-19-ada-refactor-task-list/" class="md-nav__link">
+      <a href="../2023-01-19-ada-refactor-task-list/" class="md-nav__link">
         Modding Task List to Be Demo Friendly
       </a>
     </li>
@@ -1009,7 +974,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Software_Design_Notes/2023-06-22-digital-minimalism/" class="md-nav__link">
+      <a href="../2023-06-22-digital-minimalism/" class="md-nav__link">
         Digital Minimalism Notes: June 2023
       </a>
     </li>
@@ -1050,57 +1015,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-plan" class="md-nav__link">
-    The Plan
+  <a href="#functionargs-value" class="md-nav__link">
+    function(args) -&gt; value
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#constraints" class="md-nav__link">
-    Constraints
+  <a href="#log-and-move-on-exception-handling" class="md-nav__link">
+    Log and Move On Exception Handling
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#dealing-with-api-churn" class="md-nav__link">
-    Dealing with API Churn
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#did-not-finish-natural-language-processing" class="md-nav__link">
-    Did Not Finish: Natural Language Processing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#success-hybrid-sqlite-model" class="md-nav__link">
-    Success: Hybrid SQLite Model
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#success-polymorphic-filters-and-filter-storage" class="md-nav__link">
-    Success: Polymorphic Filters and Filter Storage
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ill-take-it-building-a-desktop-app" class="md-nav__link">
-    I'll Take It: Building a Desktop App
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#final-thoughts" class="md-nav__link">
-    Final Thoughts
+  <a href="#external-interfaces" class="md-nav__link">
+    External Interfaces
   </a>
   
 </li>
@@ -1121,45 +1051,34 @@
 
 
 
-<h1 id="drama-llama-postmortem">Drama Llama: Postmortem</h1>
-<p><a href="https://github.com/kaesluder/drama-llama-py">Drama Llama main repo</a></p>
-<p><img alt="Drama Llama screenshot" src="../Drama_Llama_Test1_MacOS.png" /></p>
-<h2 id="the-plan">The Plan</h2>
-<p>The original goal coming into capstone was to apply Natural Language Processing to the consumption of social media and news feeds. Big technology companies do this routinely to push content to users and encourage doomscrolling. Given the recent changes and political controversies regarding content moderation, I feel it's quite clear that absent and insufficient content curation by big tech shifts the burden to individual users. This isn't a new problem, discussion of filters and killfiles go all the way back to Usenet and early email lists.</p>
-<p>The original plan involved developing an electron app using typescript to handle both backend and frontend logic. Since RSS feeds are notoriously variable, I was leaning to a NoSQL data store. A typescript/typescript framework can use electron inter-process-communication (IPC) for the data flow.</p>
-<p>Instead, I ended up doing another flask (python) backend with a javascript frontend. What happened?</p>
-<h2 id="constraints">Constraints</h2>
-<p>I had three weeks to bring a project from proposal to a working demo. In addition, we came home the first friday to find water pouring from ceiling vents due to a plumbing disaster from an upstairs neighbor.</p>
-<h2 id="dealing-with-api-churn">Dealing with API Churn</h2>
-<p>One problem I ran into repeatedly was having a set of components that tested well individually but refused to compile and run together. Multiple Nodejs NoSQL libraries depend on LevelDB, and I could not get M1 Mac binaries for those libraries. Typescript worked very well up to the point when library functions started delivering custom data types. Some frameworks wanted ESM imports, while others insisted on CommonJS.</p>
-<p>All of these problems could be fixed with more time and expertise, but I felt that debugging babel and webpack configs was not the best use of the limited learning time I had available.</p>
-<p><img alt="version churn in a nutshell" src="../7aod5r.jpg" /></p>
-<h2 id="did-not-finish-natural-language-processing">Did Not Finish: Natural Language Processing</h2>
-<p>This will be added to a future version. While python created opportunities to use stronger NLP libraries including NLTK and spaCy, developing the download/view features was necessary to make them useful. In the last few days, I adopted a soft freeze on new features to devote time to improving unit testing and documentation quality.</p>
-<h2 id="success-hybrid-sqlite-model">Success: Hybrid SQLite Model</h2>
-<p>Going into the project, I thought that I really needed a NoSQL solution. RSS is both not fully standardized and extendible, while my plans for filter design would involve polymorphism. Unfortunately, NoSQL was another area I couldn't figure out within the time constraints.</p>
-<p>Eventually, I discovered that SQLite includes SQL extensions for <a href="https://www.sqlite.org/json1.html">manipulating JSON field data</a>. So I adopted SQLite and used a hybrid model of relational fields for data needed for searching and sorting, and raw JSON data for everything else.</p>
-<h2 id="success-polymorphic-filters-and-filter-storage">Success: Polymorphic Filters and Filter Storage</h2>
-<p>I ended up implementing two different filter types. <code>BaseFilter</code> says "yes" to everything, while <code>RegexFilter</code> says "yes" to posts matching a regex pattern. Each filter is an object that knows how to apply its own criteria to a post, and to communicate what it is to the storage system. Storage is handled by exporting the config to a basic <code>dict()</code> and serializing it in an SQL table.</p>
-<h2 id="ill-take-it-building-a-desktop-app">I'll Take It: Building a Desktop App</h2>
-<p>I never got Electron working properly. My javascript skills were not up to writing the different dialects expected of Electron and Reactjs.</p>
-<p>Electron works by packaging Nodejs with a feature-limited version of Chrome. There are other frameworks implementing the model including <a href="https://tauri.app/">Tauri</a>. Eventually, I just went with <a href="https://pywebview.flowrl.com/">pywebview</a> which uses a python backend with a webkit front end. A python/webview or rust/webview might be easier on my brain than a nodejs/chromejs framework.</p>
-<p>Long-term I'm planning on continuing development for personal/hobby use, and I'm comfortable just running it as a microservice on my personal computer.</p>
-<h2 id="final-thoughts">Final Thoughts</h2>
-<p>It was a great, frustrating, and intense learning experience. Even though I was using a familiar stack, I had to innovate and push my knowledge on how to implement this project. Some takeaways:</p>
+<h1 id="unit-testing-design-patterns">Unit Testing Design Patterns</h1>
+<h2 id="functionargs-value"><code>function(args) -&gt; value</code></h2>
 <ol>
-<li>While I'm big on DIY, I don't feel comfortable doing interface design for others on my own.</li>
-<li>I'd like to put a lot more work into learning build and development tools instead of depending on boilerplate created by others.</li>
-<li>I'll probably continue this as a personal project, but it looks like my near future is going to be other languages and application areas.</li>
+<li>Test "happy path"</li>
+<li>Out-of-range</li>
+<li>Missing required arg</li>
+<li>Boolean arg toggle</li>
+<li>Useful exceptions</li>
 </ol>
-<p>-- 18 February, 2022</p>
+<h2 id="log-and-move-on-exception-handling">Log and Move On Exception Handling</h2>
+<ol>
+<li>Check that exception isn't bubbled up.</li>
+<li>Check log message creation.</li>
+</ol>
+<h2 id="external-interfaces">External Interfaces</h2>
+<ol>
+<li>Mock for unit testing context.</li>
+<li>Test happy path and failure cases from services.</li>
+<li>Mock test cases where remote program things its sending the right thing, but the input is flawed.</li>
+<li><strong>Check client library for "hidden" service calls.</strong></li>
+</ol>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 18, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 20, 2023</span>
       
     
   </small>
