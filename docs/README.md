@@ -6,6 +6,7 @@ Collections of snippets, thoughts, and junk. If you're unfamiliar with the conce
 
 - Looking for work
 - Volunteering for a database conversion and API for the [Trans Formation Project](https://www.transformationsproject.org)
+- Current side project: [Task Druid](https://github.com/kaesluder/taskdruid), a react to-do list with ideas from Taskwarrior and other to-do management programs.
 
 ## Recent and recommended...
 
