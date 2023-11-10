@@ -28,7 +28,7 @@ Goal: Review algorithms previously covered.
 Goal: AWS Cloud Practitioner Cert
 
 - [x] EC2
-- [ ] Global infrastructure and reliability
+- [x] Global infrastructure and reliability
 - [ ] Networking
 - [ ] Storage
 - [ ] Security
