@@ -8,7 +8,7 @@ Goal: Adopt rust as a primary language for algorithm practice and portfolio deve
 - [ ] Solve interview problems using basic data types.
 - [ ] Solve interview problems using strings and structs.
 - [ ] Implement command-line utility in rust.
-- [ ] Implement api interface in rust.
+- [x] Implement api interface in rust.
 
 ## Algorithms
 
