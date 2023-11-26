@@ -10,6 +10,7 @@ My turn to do cat sitting this holiday, so a lot of time to work on this project
 - Added the ability to search for multiple keywords. The search string "soma agent" reliably brings up [Soma FM Secret Agent Radio](https://somafm.com/secretagent/). (rust)
 - Separated post-api processing code from api-call code to make testing easier. One of the disadvantages of rust is the lack of easy mocking tools. There are ways to do it, but I'm holding off until I understand the concepts a bit better. (rust)
 - Created a CI pipeline on github to test and produce builds. (github)
+- Using it as my go-to player daily.
 
 ## Blockers
 
@@ -21,3 +22,5 @@ My turn to do cat sitting this holiday, so a lot of time to work on this project
 - Add tag search to search functionality.
 - Implement a favorites system.
 - More testing.
+
+[Github repo](https://github.com/kaesluder/radiogaga)
