@@ -13,8 +13,8 @@ Collections of snippets, thoughts, and junk. If you're unfamiliar with the conce
 
 ### Radio Browser Gaga
 
-- [Developer Notes: 18 Nov. 2023](/Radio_Browser_GaGa/2023-11-18-first-steps/)
-- [Developer Notes: 26 Nov. 2023](/Radio_Browser_GaGa/2023-11-26-thanksgiving-week-reflections/)
+- [Developer Notes: 18 Nov. 2023](Radio_Browser_GaGa/2023-11-18-first-steps.md)
+- [Developer Notes: 26 Nov. 2023](Radio_Browser_GaGa/2023-11-26-thanksgiving-week-reflections.md)
 - [github repo](https://github.com/kaesluder/radiogaga)
 
 ### Javascript/Typescript
