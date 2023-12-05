@@ -4,9 +4,9 @@
 
 Goal: Adopt rust as a primary language for algorithm practice and portfolio development.
 
-- [ ] Solve interview problems with all beginning control structures.
-- [ ] Solve interview problems using basic data types.
-- [ ] Solve interview problems using strings and structs.
+- [x] Solve interview problems with all beginning control structures.
+- [x] Solve interview problems using basic data types.
+- [x] Solve interview problems using strings and structs.
 - [ ] Implement command-line utility in rust.
 - [x] Implement api interface in rust.
 
@@ -15,12 +15,12 @@ Goal: Adopt rust as a primary language for algorithm practice and portfolio deve
 Goal: Review algorithms previously covered.
 
 - [x] Hash tables
-- [ ] Two-pointer
+- [x] Two-pointer
 - [x] Binary search
-- [ ] Dynamic programming
+- [x] Dynamic programming
 - [ ] Queues, stacks, and heaps
-- [ ] Breadth-first search
-- [ ] Depth-first search
+- [x] Breadth-first search
+- [x] Depth-first search
 - [ ] Dijkstra
 
 ## AWS
