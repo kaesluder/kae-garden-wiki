@@ -18,7 +18,7 @@ Goal: Review algorithms previously covered.
 - [x] Two-pointer
 - [x] Binary search
 - [x] Dynamic programming
-- [ ] Queues, stacks, and heaps
+- [x] Queues, stacks, and heaps
 - [x] Breadth-first search
 - [x] Depth-first search
 - [ ] Dijkstra
