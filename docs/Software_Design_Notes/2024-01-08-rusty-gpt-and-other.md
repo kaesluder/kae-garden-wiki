@@ -1,4 +1,4 @@
-# "Good Enough RAG and Other Projects
+# "Good Enough RAG" and Other Projects
 
 Something that's been filling a lot of time is looking at retrieval augmented generation (RAG). Large Language Models hallucinate a lot when using general knowledge, less if you tell it to RTFM (read the fine manual) you've just given it. RAG pipelines rely on big databases and vector (similarity) search to identify relevant context to give to the LLM.
 
